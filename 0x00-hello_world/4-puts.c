@@ -1,7 +1,7 @@
 #include <stdio.h>
 /* *
  * Description: main - prints out all sdout.
- * Return: 0 if succesful
+ * Return: 0 if succesful.
  */
 
 int main(void)
