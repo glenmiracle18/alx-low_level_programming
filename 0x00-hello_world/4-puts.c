@@ -1,7 +1,9 @@
 #include <stdio.h>
+
 /**
- * Description: main - Prints out a string to stdout.
- * Return : 0 if success.
+ * main - Serves as the entry point in the program
+ *
+ * Return: By default returns zero.
  */
 
 int main(void)
