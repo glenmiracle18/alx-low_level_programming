@@ -1,11 +1,12 @@
 #include <stdio.h>
+
 /*
- * main - entry point
- * Return: 0 always (succes)
+ * Description :main -  Prints out a string to stdout.
+ *
+ * Return: 0 if no errors.
  */
 
 int main(void)
-
 {
 
 	printf("with proper grammar, but the outcome is a piece of art,\n");
