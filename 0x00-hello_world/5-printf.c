@@ -1,12 +1,8 @@
 #include <stdio.h>
-
-/**
- *
- *  * main - main block
- *
- *   * Return: 0
- *
- *    */
+/*
+ * main - entry point
+ * Return: 0 always (succes)
+ */
 
 int main(void)
 
