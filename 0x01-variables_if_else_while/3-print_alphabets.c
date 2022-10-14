@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 
-
 /**
- * main-program entry
- * 
- * Return>0 if no error, non error
+ * main-program entry poin.
+ *
+ * Return:0 if no error
  */
-
 
 int main(void)
 
