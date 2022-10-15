@@ -5,9 +5,8 @@
  * main-program entry poing
  *
  * Return:0 If no more errow
+ *
  */
-
-
 
 int main(void)
 
