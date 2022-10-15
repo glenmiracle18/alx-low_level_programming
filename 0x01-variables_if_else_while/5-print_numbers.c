@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-/***
+/**
  * main-peform entry of program
  *
- * Return:0 if output wrong.
- */
+ * Return:0 if output wrong
+ *
+ * /
 
 
 
