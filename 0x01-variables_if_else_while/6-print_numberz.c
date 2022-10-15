@@ -1,11 +1,8 @@
 #include <stdio.h>
-
-/* 
- * main - prints all single digit base10 numbers.
- *Return: 0 returns the valueand ends the program
- *
+/**
+ * main -print all values of single digit values
+ * Retur:0 terminate the program
  */
-
 
 
 int main(void)
