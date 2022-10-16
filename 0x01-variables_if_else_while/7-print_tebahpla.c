@@ -3,7 +3,8 @@
 
 
 /**
- * main - Starts or begining of the program
+ * main - Program that prints the letters of the alphabet in reverse
+ * You can only user the put char Functio.
  * Return: 0 Ends the program
  */
 
