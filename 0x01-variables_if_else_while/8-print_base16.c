@@ -4,7 +4,7 @@
 
 /**
  * main - A program that prints all the numbers of base 16
- * In lowercase 
+ * In lowercase
  * use only putchar
  * Return:0 ends the program
  */
@@ -41,6 +41,6 @@ int main(void)
 
 	putchar('\n');
 
-	return 0;
+	return (0);
 
 }
