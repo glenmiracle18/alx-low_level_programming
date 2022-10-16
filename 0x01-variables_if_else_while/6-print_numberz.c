@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main -print all values of single digit values
- * Retur:0 terminate the program
+ * Return:0 terminate the program
  */
 
 
@@ -17,7 +17,7 @@ int main(void)
 
 		putchar(n);
 
-		n ++;
+		n++;
 
 	}
 
