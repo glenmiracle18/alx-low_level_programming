@@ -4,8 +4,8 @@
  * main-main - program that print combination
  * Numbers are space separated
  * The two digits must be different
- * 01 and 10 are considered the same 
- * Return:0 ends the program
+ * 01 and 10 are considered the same
+ * Return: 0 ends the program.
  */
 
 
