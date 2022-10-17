@@ -21,23 +21,17 @@ int main(void)
 
 	int com = 44;
 
-	while (n1 <= 57)
-
-	{
+	while (n1 <= 57){
 
 		n2 = n1 + 1;
 
-		while (n2 <= 57)
-
-		{
+		while (n2 <= 57){
 
 			putchar(n1);
 
 			putchar(n2);
 
-			if (n1 != 56 || n2 != 57)
-
-			{
+			if (n1 != 56 || n2 != 57){
 
 				putchar(com);
 
@@ -46,7 +40,6 @@ int main(void)
 			}
 
 			n2 += 1;
-
 		}
 
 		n1 += 1;
