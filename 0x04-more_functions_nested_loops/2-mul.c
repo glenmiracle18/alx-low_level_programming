@@ -1,14 +1,13 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * mul - Funtion that acccepts two arguments
- * @a: first argument
- * @b: Second argument
- * Return: multiplied value
- */
+* mul - Function that accepts two arguments
+* @a: first argument
+* @b: Second argument
+* Return: returns multiplied value
+*/
 
-int mul(int a, int b);
+int mul(int a, int b)
 {
 	return (a * b);
 }
