@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * main - updates the value of a parater
- * @n: integer to be changed
+ * rese_to_98 - Reset the variable sent to the function at 98
+ * @n: Pointer to the integer sent to the function
  *
  * Return: Always 0.
  */
