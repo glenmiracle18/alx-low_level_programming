@@ -3,7 +3,7 @@
 
 /**
  * main - updates the value of a parater
- * through a pointer
+ * @n: integer to be changed
  *
  * Return: Always 0.
  */
