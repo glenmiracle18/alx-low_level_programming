@@ -3,10 +3,11 @@
 
 /**
  * _strcat- function that concatenates two strings
+ *
  * @dest: first string
  * @src: second string
  *
- * return: nothing
+ * Return: nothing
  */
 
 
