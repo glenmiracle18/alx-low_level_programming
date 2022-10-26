@@ -9,19 +9,22 @@
 
 char *leet(char *s)
 {
-	int j;
-	int i = 0;
-	char mapping[5][2] = {"Aa", "Ee", "Oo", "Tt", "Ll"};
-	int numbers[] = {52, 51, 48, 55, 49};
+	int c = 0;
+	int d = 0;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	while (*(a + i))
+	while (*(s + c))
 	{
-		for (j = 0; j < 5; j++)
+		while (d <= 9)
 		{
-			if (*(a + i) == mapping[j][0] || *(a + i) == mapping[j][1])
-				*(a + i) = numbers[j];
+			if (a[d] == *(s + c))
+			{
+				*(s + c) = b[d];
+			}
+			d++;
 		}
-		i++;
+		c++;
 	}
-	return (a);
+	return (s);
 }
