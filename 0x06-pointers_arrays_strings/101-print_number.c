@@ -8,19 +8,42 @@
 
 void print_number(int n)
 {
-	unsigned int n1;
+	unsigned int size = n;
 
-	n1 = n;
+	int digits = 0;
+
+	int i;
 
 	if (n < 0)
+		size = -n;
+	if (n == 0)
+		digits = 1;
+
+	while (size >= 1)
 	{
-		putchar('-');
-		n1 = -n;
+		size = size / 10;
+		digits++;
 	}
 
-	if (n1 / 10 != 0)
+	for (i = 0; i < digits; i++)
 	{
-		print_number(n1 / 10);
+		int pow = 1;
+
+		int j;
+		int d;
+
+		for (j = 0; j < digits - i - 1; j++)
+		{
+			pow = pow * 10;
+		}
+
+		d = ((n / pow) % 10);
+		if (n < 0)
+		{
+			d = -d;
+			if (i == 0)
+				putchar(45);
+		}
+		putchar(48 + d);
 	}
-	putchar((n1 % 10) + '0');
 }
