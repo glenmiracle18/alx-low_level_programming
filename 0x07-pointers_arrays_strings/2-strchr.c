@@ -11,11 +11,14 @@
 
 char *_strch(char *s, char c)
 {
-	int index;
-	for (index = 0; s[index] >= '\0'; index++)
+	while (*s != '\0')
 	{
-		if (s[index] == c)
-			return (s + index);
+		if (*s == c)
+			return (s);
+		s++;
 	}
-	return ('\0');
+	if (*s == c)
+		return (s);
+	else
+		return (NULL);
 }
