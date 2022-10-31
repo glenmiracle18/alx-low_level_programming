@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * print_diagsums - prints the sum of the diagonals of the matrix
  * @a: values of the array
@@ -9,23 +9,14 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i = 0;
-	int value = 0;
-	int sum, sum2;
+	int i;
+	int diagO = 0;
+	int diagT = 0;
 
-	sum = sum2 = 0;
-	while (i < (size * size))
+	for (i = 0; i < size; i++)
 	{
-		value = *(a + i);
-		sum = sum + value;
-		i = i + size + 1;
+		diagO += a[(i * size) + i];
+		diagT += a[(size - 1) + ((size - 1) * i)];
 	}
-	i = size - 1;
-	while (i < ((size * size) - 1))
-	{
-		value = *(a + i);
-		sum 2 = sum2 + value;
-		i = i + (size - 1);
-	}
-	printf("%d, %d\n", sum, sum2);
+	printf("%d, %d\n", diagO, diagT);
 }
