@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strpbk - function that searches a string for a byte
+ * _strpbrk - function that searches a string for a byte
  *
  * @s: string to recieve
  * @accept: byte to accept
