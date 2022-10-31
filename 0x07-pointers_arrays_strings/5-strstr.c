@@ -11,16 +11,24 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *pn;
-	char *ph;
+	int i;
+	int j;
 
-	ph = needle;
-	for (; *haystack != 0; haystack++)
+	if (needle[0] == '\0')
+		return (haystack);
+
+	for (i = 0; hayback[i] != '\0'; i++)
 	{
-		for (pn = needle, ph = haystack; *pn == *ph && *pn; pn++, ph++)
-			;
-		if (*pn == '\0')
-			return (haystack);
+		if (haystack[i] == needle[0])
+		{
+			for (j = 0; needle[j] != '\0'; j++)
+			{
+				if (haystack[i + j] != needle[j])
+					break;
+			}
+			if (needle[j] == '\0')
+				return (haystack + i);
+		}
 	}
-	return (NULL)
+	return ('\0');
 }
