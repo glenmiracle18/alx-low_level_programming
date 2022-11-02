@@ -1,30 +1,36 @@
 #include "main.h"
+
 /**
- * sqrt2 - Makes possible to evaluate from 1 to n
- * @a: same number as n
- * @b: number that iterates from 1 to n
- *
- * Return: On success 1.
- * On error, -1 is returned, and errow is set appropriately.
+ * evaluatePow - Evaluate if you do the pow
+ * @possibleSqrt: Validates if the operation is possible
+ * @desired: It is the final value of the results
+ * Return: Always 0.
  */
 
-int sqrt2(int a, int b)
+int evaluatePow(int possibleSqrt, int desired)
 {
-	if (b * b == a)
-		return (b);
-	else if (b * b < a)
+	if (possibleSqrt * possibleSqrt == desired)
+	{
+		return (possibleSqrt);
+	}
+	else if (possibleSqrt * possibleSqrt > desired)
+	{
 		return (-1);
-	return (sqrt2(a, b + 1));
+	}
+	else
+	{
+		return (evaluatePow(possibleSqrt + 1, desired));
+	}
+	return (0);
 }
-/**
- * _sqrt_recursion - returns the natureal square root of n
- * @n: Number Integer
- *
- * Return: On successe 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
 
+/**
+ * _sqrt_recursion - function that returns the natural
+ * square root of a number
+ * @n: It is the final value of the results
+ * Return: Always 0.
+ */
 int _sqrt_recursion(int n)
 {
-	return (sqrt2(n, 1));
+	return (evaluatePow(1, n));
 }
