@@ -1,52 +1,50 @@
-#include "maih.hi"
+#include "main.h"
 
 /**
- * _strlen_recursion - count the number of characters
- * @s: is the string to count
- * Return: The number of characters
+ * palind2 - obtains lenght of a
+ * @a: string
+ * @l: inter to count length
+ *
+ * Return: on succes 1.
+ * On error, -1 is returned, and errno is set approximately
  */
-int _strlen_recursion(char *s)
+
+int palind2(char *a, int l)
 {
-	if (*s == '\0')
-	{
+	if (*a == 0)
+		return (l - 1);
+	return (palind2(a + 1, l + 1));
+}
+
+/**
+ * palind3 - compares string vs string reverse
+ * @a: string
+ * @l: length
+ *
+ * Return: on success 1
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
+int palind3(char *a, int l)
+{
+	if (*a != *(a + l))
 		return (0);
-	}
-	else
-	{
-		return (1 + _strlen_recursion(s + 1));
-	}
-}
-/**
- * isPalindromeRecursive - check if it is a palindrome
- * @string: is the string to count
- * @length: is the length of the string
- * Return: whether it is palindrome or not
- */
-
-int isPalindromeRecursive(char *string, int length)
-{
-	if (string[0] != string[length])
-	{
+	else if (*a == 0)
 		return (1);
-	}
-	else if (string[0] == '\0')
-	{
-		return (1);
-	}
-	else
-	{
-		return (isPalindromeRecursive(string + 1, length - 2));
-	}
+	return (palind3(a + 1, 1 - 2));
 }
 
 /**
- * is_palindrome - makes recursion of thr two functions
- * @s: is the string of strings where it looks if it is palindrome
- * Return: the result of thr palindrome
+ * is_palindrome - checks if a string is a palindrome
+ * @s: string to evaluate
+ *
+ * Return: on sucess 1
+ * On error, -1 is returned, and errno is set approproately
  */
 int is_palindrome(char *s)
 {
-	int length = _strlen_recursion(s);
+	int l;
 
-	return (isPalindromeRecursive(s, length - 1));
+	l = palind2(s, 0);
+	return (palind3(s, l));
 }
