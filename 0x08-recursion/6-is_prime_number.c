@@ -1,33 +1,34 @@
 #include "main.h"
 
 /**
- * is_prime_number - returs 1 if the input integer is a
- * prime number
- * ohterwhise return 0
- * @n: input number
- *
- * Return: int
+ * _prime - check if the number is prime
+ * @number: is the number to validate
+ * @divisor: is the divisor number to take
+ * Return: the result of whether it is prime or not
  */
 
+int _prime(int number, int divisor)
+{
+	if (number / 2 < divisor)
+	{
+		return (1);
+	}
+	if (number % divisor == 0)
+	{
+		return (0);
+	}
+	return (_prime(number, divisor + 1));
+}
+/**
+ * is_prime_number - returns if the input integer is a prime number
+ * @n: is ther int in which it validates if it is palidrome
+ * Return: the result of the prime numbers
+ */
 int is_prime_number(int n)
 {
 	if (n <= 1)
+	{
 		return (0);
-	return (getNumPrim(n, 2));
-}
-
-/**
- * getNumPrim - function that gets if num is 0 or 1
- * @num: input number
- * @i: counter variable
- * Return: int
- */
-
-int getNumPrim(int num, int i)
-{
-	if (num == i)
-		return (1);
-	if (num % i == 0)
-		return (0);
-	return (getNumPrim(num, i + 1));
+	}
+	return (_prime(n, 2));
 }
