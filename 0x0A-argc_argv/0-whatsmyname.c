@@ -6,7 +6,7 @@
  * Return: 0 for succes
  */
 
-int main(int argc, char *agrv[])
+int main(int argc, char *argv[])
 {
 	void(agrc);
 	printf("%s\n", *argv);
