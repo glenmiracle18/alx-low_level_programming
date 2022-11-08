@@ -9,7 +9,7 @@
  * Return: 0
  */
 
-int main(int argc, char *argv[] __attrubute__((unused)))
+int main(int argc, __attrubute__((unused)) char **argv)
 {
 	printf("%d\n", argc - 1);
 	return (0);
