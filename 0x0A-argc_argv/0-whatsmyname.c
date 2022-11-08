@@ -1,16 +1,14 @@
 #include <stdio.h>
-
 /**
- * main - fucntion that prints its name
- * @argc: arguments count
- * @argv: arguments vector
- * Return: always 0
+ * main - funtion thta prints its name
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 for succes
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *agrv[])
 {
-	void(argc);
-
-	printf("%s\n", argv[0]);
+	void(agrc);
+	printf("%s\n", *argv);
 	return (0);
 }
