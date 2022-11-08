@@ -1,2 +1,1 @@
-This is the function for the argv and argc project.
-
+This  is the argc and argv project task
