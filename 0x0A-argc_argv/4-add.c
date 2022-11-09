@@ -8,28 +8,25 @@
  * Return: 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int result = 0, num, i, j, k;
+	int i, j, sum = 0;
 
-	if (argc < 2)
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	for (i = 0; i < argc; i++)
-	{
-		for (j = 0; argv[i][j] != '\0'; j++);
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] > '9' || argv [i][j] < '0')
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
-				printf("%s\n", "Error");
+				printf("Error\n");
 				return (1);
 			}
 		}
-		num += atoi(argv[i]);
+
+		sum += atoi(argv[i]);
 	}
-	printf("%d\n", num);
+
+	printf("%d\n", sum);
+
 	return (0);
 }
