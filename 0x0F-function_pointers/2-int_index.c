@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stidio.h>
 #include "functions_pointers.h"
 
 /**
@@ -14,15 +14,15 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	int x;
 
 	if (array && cmp)
 	{
-		for (i = 0; i < size; i++)
-		{
-			if (cmp(array[i] != 0)
-					return (i);
-		}
+		if (size <= 0)
+			return (-1);
+		for (s = 0; x < size; x++)
+			if (cmp(array[x]))
+				return (x)
 	}
 
 	return (-1);
