@@ -1,1 +1,1 @@
-Solutions to the tasks on singly linked list alx project
+0x12-singly_linked_lists
